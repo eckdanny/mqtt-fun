@@ -1,0 +1,16 @@
+@value clr_cyan: #61dafb;
+
+.Button {
+  color: clr_cyan;
+  cursor: pointer;
+  border: 2px solid clr_cyan;
+  border-radius: 3px;
+  font-size: large;
+  padding: calc(1em / 2);
+  margin-top: 1.5em;
+  background-color: transparent;
+}
+
+.Counter {
+  margin-left: 0.375em;
+}
