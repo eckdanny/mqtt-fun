@@ -1,0 +1,14 @@
+{
+  "name": "mqtt-fun",
+  "description": "Just exploring some mqtt stuff on my own...",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:client": "yarn --cwd client start",
+    "start:mosquitto": "docker run -it -p 1883:1883 -p 9001:9001 -v ${PWD}/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
