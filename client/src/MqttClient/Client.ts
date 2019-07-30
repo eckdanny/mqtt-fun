@@ -1,5 +1,5 @@
-import mqtt from 'mqtt';
+import mqtt, { MqttClient, IClientOptions } from 'mqtt';
 
-export default () => {
-  return mqtt.connect(`mqtt://localhost:9001`);
+export default (url: any, options?: IClientOptions | undefined): MqttClient => {
+  return mqtt.connect(url, options);
 };
